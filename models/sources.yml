@@ -1,0 +1,20 @@
+
+version: 2
+sources:
+  - name: netflix
+    database: NETFLIX_DB
+    schema: RAW
+    description: 'Raw NETFLIX_DB data loaded from CSV files'
+    tables:
+      - name: raw_movies
+        description: 'Movie titles and genres'
+      - name: raw_ratings
+        description: 'User ratings — userId, movieId, rating, timestamp'
+      - name: raw_tags
+        description: 'User-applied tags on movies'
+      - name: raw_genome_scores
+        description: 'Tag relevance scores per movie (0-1 float)'
+      - name: raw_genome_tags
+        description: 'Tag ID to tag name mapping'
+      - name: raw_links
+        description: 'IMDB and TMDB IDs for each movie'
