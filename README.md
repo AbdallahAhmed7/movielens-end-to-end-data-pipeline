@@ -68,11 +68,7 @@ The pipeline follows the **Medallion Architecture** (Bronze → Silver → Gold)
 | 🥈 **Silver** | `NETFLIX_DB.STAGING` + `NETFLIX_DB.ANALYTICS` | Renamed columns, type casting, surrogate keys, business logic |
 | 🥇 **Gold** | `NETFLIX_DB.ANALYTICS` (marts) | Pre-aggregated, dashboard-ready tables |
 
-```
-CSV Files ──► AWS S3 ──► Snowflake RAW ──► dbt Staging + Core ──► dbt Marts ──► Power BI
-              │               │                    │                    │
-           🥉 BRONZE       🥉 BRONZE            🥈 SILVER           🥇 GOLD
-```
+---
 ##  STAR SCHEMA DIAGRAM
 
 <img width="3989" height="2911" alt="star_schema" src="https://github.com/user-attachments/assets/34297cd9-17b8-45ec-8031-66e5c8b109a0" />
