@@ -2,11 +2,11 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'netflix'
+name: 'movielens'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'netflix'
+profile: 'movielens'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -38,11 +38,11 @@ models:
     +materialized: view # default for anything not overridden
 
     staging: # models/staging/ folder
-      +schema: staging # -> NETFLIX_DB.STAGING
+      +schema: staging # -> MOVIELENS.STAGING
       +materialized: view
 
     dim: # models/dim/ folder
-      +schema: analytics # -> NETFLIX_DB.ANALYTICS
+      +schema: analytics # -> MOVIELENS.ANALYTICS
       +materialized: table
 
     fct: # models/fct/ folder
@@ -60,4 +60,4 @@ models:
 
 snapshots:
   netflix:
-    +target_schema: snapshots # -> NETFLIX_DB.SNAPSHOTS
+    +target_schema: snapshots # -> MOVIELENS.SNAPSHOTS
