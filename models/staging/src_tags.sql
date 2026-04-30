@@ -1,6 +1,6 @@
 
 WITH raw_tags AS (
-SELECT * FROM {{ source('netflix', 'raw_tags') }}
+SELECT * FROM {{ source('movielens', 'raw_tags') }}
 )
 
 SELECT
