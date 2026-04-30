@@ -1,7 +1,7 @@
 
 
 WITH raw_movies AS (
-SELECT * FROM {{ source('netflix', 'raw_movies') }}
+SELECT * FROM {{ source('movielens', 'raw_movies') }}
 )
 
 SELECT
