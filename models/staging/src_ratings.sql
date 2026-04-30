@@ -3,7 +3,7 @@
 
 
 WITH raw_ratings AS (
-SELECT * FROM {{ source('netflix', 'raw_ratings') }}
+SELECT * FROM {{ source('movielens', 'raw_ratings') }}
 )
 SELECT
 userId AS user_id,
