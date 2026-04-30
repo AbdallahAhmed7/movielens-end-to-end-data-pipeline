@@ -53,7 +53,8 @@ The pipeline follows the **Medallion Architecture** (Bronze → Silver → Gold)
 ## 🏗️ Architecture Diagram
 
 <div align="center">
-<img width="1691" height="930" alt="diagram_last" src="https://github.com/user-attachments/assets/fb7c4233-06cc-46c2-8793-4b4375cbdd77" />
+
+  <img width="1692" height="930" alt="diagram" src="https://github.com/user-attachments/assets/7c591f0b-a946-41a4-bfba-e59fff65b97f" />
 
 
 *End-to-end pipeline: CSV → S3 → Snowflake → dbt → Power BI*
@@ -64,9 +65,9 @@ The pipeline follows the **Medallion Architecture** (Bronze → Silver → Gold)
 
 | Layer | Storage | What happens |
 |-------|---------|--------------|
-| 🥉 **Bronze** | AWS S3 + `NETFLIX_DB.RAW` | Raw files loaded as-is — no transformation, original column names and types |
-| 🥈 **Silver** | `NETFLIX_DB.STAGING` + `NETFLIX_DB.ANALYTICS` | Renamed columns, type casting, surrogate keys, business logic |
-| 🥇 **Gold** | `NETFLIX_DB.ANALYTICS` (marts) | Pre-aggregated, dashboard-ready tables |
+| 🥉 **Bronze** | AWS S3 + `MOVIELENS.RAW` | Raw files loaded as-is — no transformation, original column names and types |
+| 🥈 **Silver** | `MOVIELENS.STAGING` + `MOVIELENS.ANALYTICS` | Renamed columns, type casting, surrogate keys, business logic |
+| 🥇 **Gold** | `MOVIELENS.ANALYTICS` (marts) | Pre-aggregated, dashboard-ready tables |
 
 ---
 ##  STAR SCHEMA DIAGRAM
@@ -95,8 +96,7 @@ Run all steps in a Snowflake Worksheet as `ACCOUNTADMIN`.
 
 ## 📊 Power BI Dashboard
 
-<img width="1322" height="886" alt="DASHBOARD" src="https://github.com/user-attachments/assets/9cc8b2c3-324b-4a4c-85f5-d14bb45ae801" />
-
+<img width="1325" height="885" alt="DASHBOARD" src="https://github.com/user-attachments/assets/720189df-954b-4215-9ef9-d88a2b543233" />
 
 ---
 
@@ -104,7 +104,7 @@ Run all steps in a Snowflake Worksheet as `ACCOUNTADMIN`.
   
 ## 🚀 How to Run
 
-**Prerequisites:** Snowflake account with `NETFLIX_DB.RAW` loaded · dbt Core installed (`pip install dbt-snowflake`) · credentials in `~/.dbt/profiles.yml`
+**Prerequisites:** Snowflake account with `MOVIELENS.RAW` loaded · dbt Core installed (`pip install dbt-snowflake`) · credentials in `~/.dbt/profiles.yml`
 
 ```bash
 # Clone the repo
