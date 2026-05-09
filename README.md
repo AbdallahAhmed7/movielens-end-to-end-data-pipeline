@@ -162,7 +162,6 @@ dbt deps && dbt snapshot && dbt run && dbt test
 
 **Abdallah Ahmed**
 
-*Data Engineer | Data Analytics & Visualization*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/abdallahahmed7)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/AbdallahAhmed7)
