@@ -234,7 +234,7 @@ dbt docs generate && dbt docs serve
 │   ├── sources.yml
 │   └── schema.yml
 │
-├── powerbi/
+├── docs/
 │
 ├── dbt_project.yml
 ├── packages.yml
