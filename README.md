@@ -33,6 +33,10 @@
   <img width="60" height="60" alt="apache-airflow-icon" src="https://github.com/user-attachments/assets/8ed72eb0-cbdd-4cb2-81ef-60f5149d9e08" /><br/>
   <sub><b>Apache Airflow</b></sub>
 </td>
+<td align="center">
+  <img width="65" height="63" alt="apache-airflow-icon" src="https://github.com/user-attachments/assets/825a0362-e9c7-44dd-ab36-d544dbda321a" /><br/>
+  <sub><b>Docker</b></sub>
+</td>
   </tr>
 </table>
 
